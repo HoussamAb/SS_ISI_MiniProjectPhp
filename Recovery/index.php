@@ -12,9 +12,11 @@ if(isset($_SESSION["recover_email_sent"]))
     include "passwordchange.php";
 }else{
 ?>
-    <form>
+    <form action="index.php" method="post">
 entrez votre email : <input name="email"/>
         <br>
 entrez votre login : <input name="login"/>
+        <br>
+        <button name="submit" type="submit" value="envoyer" >envoyer</button>
     </form>
 <?php } ?>

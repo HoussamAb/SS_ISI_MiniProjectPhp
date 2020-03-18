@@ -36,6 +36,7 @@ if(isset($_SESSION["user"]))
 {
     header("location:../");
 }else{
+
     ?>
 
     <html>
@@ -47,7 +48,7 @@ if(isset($_SESSION["user"]))
         <label>username</label>
         <input name="password"/>
         <br>
-        <input name="token" type="hidden" value="<?php $_SESSION["token"]?>"/>
+        <input name="token" type="hidden" value="<?php echo $_SESSION["token"]?>"/>
         <button type="submit">se connecter</button>
         <a href="../Register">creer un compte</a>
     </form>

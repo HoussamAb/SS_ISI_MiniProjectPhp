@@ -17,6 +17,7 @@ if(isset($_SESSION["user"]))
 <form method="post">
     <button name="logout" type="submit">logout</button>
 </form>
+<a href="./Recovery/"> Change password </a>
 <?php
 }else {
     echo "hello motherfuccker";
