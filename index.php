@@ -20,6 +20,6 @@ if(isset($_SESSION["user"]))
 <a href="./Recovery/"> Change password </a>
 <?php
 }else {
-    echo "hello motherfuccker";
+    echo "hello Guest";
 }
 ?>
